@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <include
+        android:id="@+id/toolbarBackRegister"
+        layout="@layout/toolbar_back_only" />
+
+    <AutoCompleteTextView
+        android:id="@+id/emailAddress"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:autofillHints=""
+        android:background="@drawable/input"
+        android:hint="@string/adres_email"
+        android:inputType="textEmailAddress" />
+
+    <AutoCompleteTextView
+        android:id="@+id/username"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/input"
+        android:hint="@string/login"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input"
+        android:hint="@string/haslo"
+        android:imeActionLabel="@string/zarejestruj_sie"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/repeatPassword"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input"
+        android:hint="@string/powtorz_haslo"
+        android:imeActionLabel="@string/zarejestruj_sie"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_oval"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="3dp"
+            android:paddingRight="3dp"
+            android:text="@string/akceptuje"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/regulationsLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/regulamin"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:contentDescription="@string/grafika"
+        app:srcCompat="@drawable/party_pink" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="-150dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/rounded_button"
+        android:enabled="true"
+        android:text="@string/zarejestruj_sie"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

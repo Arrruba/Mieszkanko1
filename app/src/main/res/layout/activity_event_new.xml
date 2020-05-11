@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".event_new">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-65dp"
+            app:srcCompat="@drawable/event_bckground"
+            android:contentDescription="@string/grafika"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/brick_transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/returnEventsCalendar"
+                    android:layout_width="32dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:contentDescription="@string/ikona_powrotu"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_back_white" />
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-32dp"
+                    android:layout_marginLeft="-32dp"
+                    android:gravity="center"
+                    android:text="@string/nowe_wydarzenie"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/eventName"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-55dp"
+        android:autofillHints=""
+        android:background="@drawable/input"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="@string/nazwa"
+        android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/dateStart"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:popupBackground="@drawable/dropdown_background"
+        android:spinnerMode="dropdown"
+        tools:listitem="@layout/drop_down_item" />
+
+    <Spinner
+        android:id="@+id/timeStart"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:popupBackground="@drawable/dropdown_background"
+        android:spinnerMode="dropdown"
+        tools:listitem="@layout/drop_down_item" />
+
+    <Spinner
+        android:id="@+id/timeEnd"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:popupBackground="@drawable/dropdown_background"
+        android:spinnerMode="dropdown"
+        tools:listitem="@layout/drop_down_item" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/numOfPeople"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@drawable/input"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="@string/liczba_osob"
+        android:inputType="number" />
+
+    <AutoCompleteTextView
+        android:id="@+id/eventDescription"
+        android:layout_width="315dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:background="@drawable/input"
+        android:textColor="@color/colorPrimaryDark"
+        android:hint="@string/opis"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/addEvent"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button"
+        android:enabled="true"
+        android:text="@string/zapisz"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

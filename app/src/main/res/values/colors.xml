@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FA7268</color>
+    <color name="colorAccent">#18BCBC</color>
+    <color name="brick">#FA7268</color>
+    <color name="brick_transparent">#99FA7268</color>
+    <color name="black_transparent">#cb000000</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="register_text">#18BCBC</color>
+
+</resources>

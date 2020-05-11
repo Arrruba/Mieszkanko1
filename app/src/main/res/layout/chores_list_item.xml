@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@drawable/chore_list_item_bckground">
+
+        <TextView
+            android:id="@+id/choreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="ABCdef"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/editChore"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/edytuj"
+            android:gravity="end"
+            android:background="@null"
+            android:src="@drawable/ic_edit" />
+
+        <ImageButton
+            android:id="@+id/deleteChore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/usun"
+            android:gravity="end"
+            android:background="@null"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

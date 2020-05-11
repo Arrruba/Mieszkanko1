@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".event_CalendarView">
+
+    <include layout="@layout/events_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/calendarViewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="@string/widok_kalendarza"
+            android:src="@drawable/ic_calendar_active" />
+
+        <ImageButton
+            android:id="@+id/listViewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@null"
+            android:contentDescription="@string/widok_listy"
+            android:src="@drawable/ic_list_points_not_active" />
+
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" />
+
+    <ImageButton
+        android:id="@+id/addEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:background="@null"
+        android:contentDescription="@string/dodaj_wydarzenie"
+        android:src="@drawable/ic_add_button" />
+
+
+</LinearLayout>

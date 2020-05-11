@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="40dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/osoba"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/personNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+
+    <Spinner
+        android:id="@+id/personList"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/input"
+        android:popupBackground="@drawable/dropdown_background"
+        android:spinnerMode="dropdown"
+        tools:listitem="@layout/drop_down_item" />
+
+</LinearLayout>

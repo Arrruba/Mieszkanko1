@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/list_item_bckground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/listItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="ABCdef"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-10dp"
+                    android:text="@string/wydarzenie"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <!--          ROZWIJANE WYDARZENIE          -->
+
+
+            <LinearLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="@string/data"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/dateEvent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01.01.2020"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="35dp"
+                    android:paddingLeft="35dp"
+                    android:paddingEnd="35dp">
+
+                    <LinearLayout
+                        android:id="@+id/timeStartWTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="@string/start"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/timeStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19.00"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toEndOf="@id/timeStartWTitle"
+                        android:layout_toRightOf="@id/timeStartWTitle"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="@string/koniec"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/timeEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00.00"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginLeft="35dp"
+                        android:text="@string/liczba_os"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/numOfPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/opis_"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/descriptionEvent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:text="Impreza urodzinowa Krzyśka!"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

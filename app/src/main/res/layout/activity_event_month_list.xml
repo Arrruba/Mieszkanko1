@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".event_day_list">
+
+    <include layout="@layout/events_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/calendarViewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_calendar_not_active" />
+
+        <ImageButton
+            android:id="@+id/listViewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_list_points_active" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/monthOfEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Styczeń 2020"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dayEventsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/expandable_card_calendar" />
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/addButtonEvents"
+        layout="@layout/add_button_for_list" />
+
+</LinearLayout>
